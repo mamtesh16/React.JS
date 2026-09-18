@@ -12,6 +12,8 @@ import Home from "./home.jsx";
 import About from "./about.jsx";
 import Contact from "./contact.jsx"
 import Resume from "./resume.jsx"
+import Skills from "./skills.jsx"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +37,13 @@ const router = createBrowserRouter([
      },
      {
       path :"user/:userid",
-    element :<user/>     }
+    element :<user/>   
+    },
+    {
+      path:"skills",
+      element:<Skills/>
+    },
+   
     ],
   },
 ]);

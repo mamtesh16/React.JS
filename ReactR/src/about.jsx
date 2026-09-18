@@ -1,40 +1,83 @@
 import React from "react";
+import about from "./assets/about.jpg";
 
 export default function About() {
   return (
-    <div className="py-16 bg-white">
-      <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
-        <div className="space-y-6 md:flex md:items-center md:gap-6 md:space-y-0 lg:gap-12">
+    <section className="bg-white py-20">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
-          <div className="md:w-5/12 lg:w-5/12">
+        <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-20">
+
+          {/* Image */}
+          <div className="flex justify-center">
             <img
-              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
-              alt="About"
-              className="w-full"
+              src={about}
+              alt="About Mamtesh"
+              className="w-full max-w-md rounded-2xl object-cover shadow-xl"
             />
           </div>
 
-          <div className="md:w-7/12 lg:w-6/12">
-            <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
-              React development is carried out by passionate developers
+          {/* Content */}
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-500">
+              About Me
+            </p>
+
+            <h2 className="text-3xl font-bold leading-tight text-gray-900 md:text-4xl lg:text-5xl">
+              Building ideas into
+              <span className="block">interactive digital experiences</span>
             </h2>
 
-            <p className="mt-6 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis
-              voluptatem accusantium nemo perspiciatis delectus atque autem!
-              Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur!
-              Officiis id consequatur atque doloremque!
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              I'm Mamtesh Kumar, a Computer Science student and aspiring Full
+              Stack Developer who enjoys turning ideas into clean, responsive,
+              and user-friendly web applications.
             </p>
 
-            <p className="mt-4 text-gray-600">
-              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur
-              quam mollitia.
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              I code with curiosity, build with purpose, and learn by doing.
+              I enjoy solving problems and creating projects that combine
+              creativity with technology.
             </p>
+
+            {/* Tech Stack */}
+            <div className="mt-8">
+              <h3 className="text-xl font-bold text-gray-900">
+                Tech Stack
+              </h3>
+
+              <div className="mt-4 flex flex-wrap gap-3">
+
+                <span className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-medium text-white shadow-sm">
+                  ⚛️ React
+                </span>
+
+                <span className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-medium text-white shadow-sm">
+                  🟨 JavaScript
+                </span>
+
+                <span className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-medium text-white shadow-sm">
+                  🟧 HTML
+                </span>
+
+                <span className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-medium text-white shadow-sm">
+                  🔵 CSS
+                </span>
+
+                <span className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-medium text-white shadow-sm">
+                  ☕ Java
+                </span>
+
+              </div>
+            </div>
+
+            <p className="mt-6 text-sm font-medium text-gray-700">
+              🎯 Currently learning, building, and growing as a developer
+            </p>
+
           </div>
-
         </div>
       </div>
-    </div>
+    </section>
   );
 }
