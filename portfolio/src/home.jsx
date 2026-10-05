@@ -1,7 +1,7 @@
 import React from "react";
 import about from "./assets/about.jpg";
 import boy from "./assets/boy.jpeg.png";
-import resumePdf from "./assets/Resume.pdf";
+import resumePdf from "./assets/resume1.pdf";
 import reactR from "./assets/reactR.webp"
 export default function Home() {
     return (
