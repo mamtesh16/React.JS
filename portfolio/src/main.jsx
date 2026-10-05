@@ -7,12 +7,12 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-import Layout from "./layout.jsx";
-import Home from "./home.jsx";
-import About from "./about.jsx";
-import Contact from "./contact.jsx";
-import Resume from "./resume.jsx";
-import Skills from "./skills.jsx";
+import Layout from "./Layout.jsx";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Contact from "./Contact.jsx";
+import Resume from "./Resume.jsx";
+import Skills from "./Skills.jsx";
 
 const router = createBrowserRouter([
     {
